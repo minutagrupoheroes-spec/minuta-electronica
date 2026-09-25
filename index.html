@@ -252,7 +252,7 @@
       href="https://script.google.com/macros/s/AKfycbxKgDOp95V-tjPi3DutKbpnJktsA8LZdNEq1afealvt8bTuN7FFV2koJbG90ArR8i-42Q/exec"
       onclick="mostrarCargaMinuta()">
 
-      🛡️ ABRIR MINUTA ELECTRÓNICA
+      🛡️ CARGANDO MINUTA ELECTRÓNICA
 
     </a>
 
@@ -292,6 +292,25 @@
   </script>
 
 
+  <script>
+function mostrarCargaMinuta() {
+
+  const boton = document.getElementById("botonMinuta");
+
+  if (boton) {
+
+    boton.textContent = "⏳ CARGANDO MINUTA...";
+
+    boton.style.opacity = "0.75";
+
+    boton.style.pointerEvents = "none";
+
+  }
+
+}
+</script>
+
+  
 </body>
 
 </html>
