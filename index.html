@@ -75,23 +75,45 @@
         0 10px 35px rgba(0, 0, 0, 0.15);
     }
 
-    .logo {
-      display: block;
-      width: 150px;
-      height: 150px;
-      object-fit: contain;
-      margin: 0 auto 20px;
-    }
+.logo {
+  display: block !important;
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  margin: 0 auto 20px auto;
+  clear: both;
+}
 
-    h1 {
-      display: block;
-      width: 100%;
-      margin: 0;
-      color: #0b3d91;
-      font-size: 27px;
-      text-align: center;
-    }
+h1 {
+  display: block !important;
+  width: 100%;
+  margin: 0 0 12px 0;
+  color: #0b3d91;
+  font-size: 27px;
+  text-align: center;
+  clear: both;
+}
 
+    .contenedor {
+  display: block !important;
+  text-align: center;
+}
+
+.contenedor .logo,
+.contenedor h1,
+.contenedor .subtitulo,
+.contenedor .boton,
+.contenedor .pie {
+  display: block !important;
+  width: 100%;
+}
+
+.contenedor .logo {
+  width: 150px !important;
+  height: 150px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
     .subtitulo {
       margin: 12px 0 25px;
       color: #555555;
