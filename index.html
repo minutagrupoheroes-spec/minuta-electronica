@@ -152,16 +152,53 @@ h1 {
 <body>
 
   <script>
-  setTimeout(function() {
-    window.location.href =
-      "https://script.google.com/macros/s/AKfycbxKgDOp95V-tjPi3DutKbpnJktsA8LZdNEq1afealvt8bTuN7FFV2koJbG90ArR8i-42Q/exec";
-  }, 2500);
-</script>
+    setTimeout(function() {
+      window.location.href =
+        "https://script.google.com/macros/s/AKfycbxKgDOp95V-tjPi3DutKbpnJktsA8LZdNEq1afealvt8bTuN7FFV2koJbG90ArR8i-42Q/exec";
+    }, 2500);
+  </script>
+
+  <main class="contenedor">
 
     <img
       class="logo"
       src="icono.png"
       alt="Escudo MINUTA ELECTRÓNICA">
+
+    <h1>MINUTA ELECTRÓNICA</h1>
+
+    <p class="subtitulo">
+      Sistema de gestión y consulta
+      de minutas.
+    </p>
+
+    <a
+      id="botonMinuta"
+      class="boton"
+      href="https://script.google.com/macros/s/AKfycbxKgDOp95V-tjPi3DutKbpnJktsA8LZdNEq1afealvt8bTuN7FFV2koJbG90ArR8i-42Q/exec"
+      onclick="mostrarCargaMinuta()">
+      🛡️ ABRIR MINUTA ELECTRÓNICA
+    </a>
+
+    <div class="pie">
+      MINUTA ELECTRÓNICA
+    </div>
+
+  </main>
+
+  <script>
+    function mostrarCargaMinuta() {
+      const boton = document.getElementById("botonMinuta");
+
+      if (boton) {
+        boton.textContent = "⏳ CARGANDO MINUTA...";
+        boton.style.opacity = "0.75";
+        boton.style.pointerEvents = "none";
+      }
+    }
+  </script>
+
+</body>
 
     <h1>
       MINUTA ELECTRÓNICA
