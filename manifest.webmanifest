@@ -1,8 +1,8 @@
 {
   "name": "MINUTA ELECTRÓNICA",
   "short_name": "MINUTA",
-  "start_url": "./",
-  "scope": "./",
+"start_url": "https://script.google.com/macros/s/AKfycbyGS4T4b_Ejh8PuGCt334SIhO3UVIl2yHAitOscrqG66PNQcj_SIDKHgmB99nP-0bAP/exec",
+"scope": "./",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#0b3d91",
