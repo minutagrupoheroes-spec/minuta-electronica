@@ -57,185 +57,240 @@
     }
 
     body {
+      min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      min-height: 100vh;
       padding: 20px;
     }
 
+    /* TARJETA PRINCIPAL */
+
     .contenedor {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: center !important;
+      justify-content: flex-start !important;
+
       width: 100%;
       max-width: 430px;
+
       background: #ffffff;
       border-radius: 18px;
+
       padding: 30px 24px;
+
       text-align: center;
+
       box-shadow:
         0 10px 35px rgba(0, 0, 0, 0.15);
     }
 
-.logo {
-  display: block !important;
-  width: 150px;
-  height: 150px;
-  object-fit: contain;
-  margin: 0 auto 20px auto;
-  clear: both;
-}
+    /* LOGO */
 
-h1 {
-  display: block !important;
-  width: 100%;
-  margin: 0 0 12px 0;
-  color: #0b3d91;
-  font-size: 27px;
-  text-align: center;
-  clear: both;
-}
+    .logo {
+      display: block !important;
 
-    .contenedor {
-  display: block !important;
-  text-align: center;
-}
+      width: 150px !important;
+      height: 150px !important;
 
-.contenedor .logo,
-.contenedor h1,
-.contenedor .subtitulo,
-.contenedor .boton,
-.contenedor .pie {
-  display: block !important;
-  width: 100%;
-}
+      object-fit: contain;
 
-.contenedor .logo {
-  width: 150px !important;
-  height: 150px !important;
-  margin-left: auto !important;
-  margin-right: auto !important;
-}
-    .subtitulo {
-      margin: 12px 0 25px;
-      color: #555555;
-      font-size: 16px;
-      line-height: 1.5;
+      margin: 0 auto 20px auto !important;
+
+      flex: none !important;
     }
 
+    /* TITULO */
+
+    h1 {
+      display: block !important;
+
+      width: 100% !important;
+
+      margin: 0 0 12px 0 !important;
+
+      padding: 0;
+
+      color: #0b3d91;
+
+      font-size: 27px;
+
+      line-height: 1.2;
+
+      text-align: center;
+
+      flex: none !important;
+    }
+
+    /* SUBTITULO */
+
+    .subtitulo {
+      display: block !important;
+
+      width: 100% !important;
+
+      margin: 0 0 25px 0 !important;
+
+      padding: 0;
+
+      color: #555555;
+
+      font-size: 16px;
+
+      line-height: 1.5;
+
+      text-align: center;
+
+      flex: none !important;
+    }
+
+    /* BOTON */
+
     .boton {
-      display: block;
-      width: 100%;
+      display: block !important;
+
+      width: 100% !important;
+
       padding: 16px;
+
       border-radius: 10px;
+
       background: #0b3d91;
+
       color: #ffffff;
+
       text-decoration: none;
+
       font-size: 17px;
+
       font-weight: bold;
+
+      text-align: center;
+
       box-shadow:
         0 5px 15px rgba(11, 61, 145, 0.25);
+
+      flex: none !important;
     }
 
     .boton:active {
       transform: scale(0.98);
     }
 
+    /* PIE */
+
     .pie {
+      display: block !important;
+
+      width: 100% !important;
+
       margin-top: 22px;
+
       color: #777777;
+
       font-size: 13px;
+
+      text-align: center;
+
+      flex: none !important;
     }
 
   </style>
 
 </head>
 
+
 <body>
 
+
+  <!-- REDIRECCIÓN AUTOMÁTICA -->
+
   <script>
+
     setTimeout(function() {
+
       window.location.href =
         "https://script.google.com/macros/s/AKfycbxKgDOp95V-tjPi3DutKbpnJktsA8LZdNEq1afealvt8bTuN7FFV2koJbG90ArR8i-42Q/exec";
+
     }, 2500);
+
   </script>
 
+
+  <!-- TARJETA -->
+
   <main class="contenedor">
+
+
+    <!-- LOGO -->
 
     <img
       class="logo"
       src="icono.png"
       alt="Escudo MINUTA ELECTRÓNICA">
 
+
+    <!-- TITULO -->
+
     <h1>MINUTA ELECTRÓNICA</h1>
+
+
+    <!-- DESCRIPCIÓN -->
 
     <p class="subtitulo">
       Sistema de gestión y consulta
       de minutas.
     </p>
+
+
+    <!-- BOTON -->
 
     <a
       id="botonMinuta"
       class="boton"
       href="https://script.google.com/macros/s/AKfycbxKgDOp95V-tjPi3DutKbpnJktsA8LZdNEq1afealvt8bTuN7FFV2koJbG90ArR8i-42Q/exec"
       onclick="mostrarCargaMinuta()">
+
       🛡️ ABRIR MINUTA ELECTRÓNICA
+
     </a>
 
+
+    <!-- PIE -->
+
     <div class="pie">
       MINUTA ELECTRÓNICA
     </div>
 
+
   </main>
+
+
+  <!-- FUNCION DEL BOTON -->
 
   <script>
+
     function mostrarCargaMinuta() {
-      const boton = document.getElementById("botonMinuta");
+
+      const boton =
+        document.getElementById("botonMinuta");
 
       if (boton) {
-        boton.textContent = "⏳ CARGANDO MINUTA...";
+
+        boton.textContent =
+          "⏳ CARGANDO MINUTA...";
+
         boton.style.opacity = "0.75";
+
         boton.style.pointerEvents = "none";
+
       }
+
     }
+
   </script>
 
-</body>
-
-    <h1>
-      MINUTA ELECTRÓNICA
-    </h1>
-
-    <p class="subtitulo">
-      Sistema de gestión y consulta
-      de minutas.
-    </p>
-
-<a
-  id="botonMinuta"
-  class="boton"
-  href="https://script.google.com/macros/s/AKfycbxKgDOp95V-tjPi3DutKbpnJktsA8LZdNEq1afealvt8bTuN7FFV2koJbG90ArR8i-42Q/exec"
-  onclick="mostrarCargaMinuta()">
-  🛡️ ABRIR MINUTA ELECTRÓNICA
-</a>
-
-<script>
-function mostrarCargaMinuta() {
-  const boton = document.getElementById("botonMinuta");
-
-  if (boton) {
-    boton.textContent = "⏳ CARGANDO MINUTA...";
-    boton.style.opacity = "0.75";
-    boton.style.pointerEvents = "none";
-  }
-}
-</script>
-
-
-
-    <div class="pie">
-      MINUTA ELECTRÓNICA
-    </div>
-
-  </main>
 
 </body>
 
